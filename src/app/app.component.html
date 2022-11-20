@@ -1,0 +1,94 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12">
+      <h4 class="mb-3">Admin</h4>
+    </div>
+  </div>
+
+  <input type="text" pInputText [(ngModel)]="message" name="message" (change)="sendMessage()">
+
+  <div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-between align-items-center">
+      <div class="internal-network-container">
+        <span>Internal Network</span>
+        <div class="d-flex gap-3 flex-wrap justify-content-between align-items-center">
+          <div>
+            <span>Port: </span>
+            <input type="text" class="w-50" pInputText>
+          </div>
+
+          <div class="listen-for-encoders">
+            <span>Start listener (for encoders)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-6 col-md-6 col-sm-12">
+      <div class="d-flex flex-wrap gap-3 justify-content-end align-items-center">
+        <div class="simulate-call-container flex-grow-1">
+          <span>Simulate Call</span>
+          <div class="d-flex gap-3">
+            <p-dropdown class="flex-grow-1"></p-dropdown>
+            <p-button [label]="'Call'"></p-button>
+          </div>
+
+        </div>
+
+        <div class="choose-call-container flex-grow-1">
+          <span>Choose Call</span>
+          <div class="d-flex gap-3">
+            <p-dropdown class="flex-grow-1"></p-dropdown>
+            <p-button [label]="'Call'"></p-button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row mt-3">
+    <div class="col-lg-6 col-md-6 col-sm-6 pe-0 ">
+      <div class="history-details-container">
+        <h6>dasdas</h6>
+        <h6>dasdas</h6>
+        <h6>dasdas</h6>
+        <h6>dasdas</h6>
+        <h6>dasdas</h6>
+        <h6>dasdas</h6>
+      </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6 ps-0">
+      <div class="call-history-container">
+        <div class="h-50"></div>
+        <div class="online-controllers-container h-50">
+          <div class="d-flex justify-content-between align-items-center">
+            <h4 class="flex-grow-1">Online Controllers</h4>
+            <div class="flex-grow-1">
+              <div class="choose-call-container">
+                <span>Choose Controller</span>
+                <div class="d-flex gap-3">
+                  <p-dropdown class="flex-grow-1"></p-dropdown>
+                  <p-button [label]="'Call'"></p-button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-list-container">
+            <ul>
+              <li class="active">9265678745544</li>
+              <li class="active">9265678745544</li>
+              <li class="active">9265678745544</li>
+              <li class="active">9265678745544</li>
+              <li class="inactive">9265678745544</li>
+              <li class="inactive">9265678745544</li>
+              <li class="inactive">9265678745544</li>
+              <li class="inactive">9265678745544</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

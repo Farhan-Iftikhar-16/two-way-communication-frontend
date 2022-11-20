@@ -1,0 +1,73 @@
+.internal-network-container, .simulate-call-container, .choose-call-container {
+  border: 1px solid #DCE1EB;
+  border-radius: 8px;
+  opacity: 1;
+  padding: 12px;
+
+  > span {
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+}
+
+.listen-for-encoders {
+  background: #2AB6C7;
+  border-radius: 8px;
+  padding: 5px 12px;
+  color: #ffffff;
+}
+
+.history-details-container {
+  border: 1px solid #DCE1EB;
+  border-right: 5px solid #DCE1EB;
+  height: calc(100vh - 185px);
+  padding: 12px;
+}
+
+.call-history-container {
+  border: 1px solid #DCE1EB;
+  border-left: 5px solid #DCE1EB;
+  height: calc(100vh - 185px);
+  padding: 12px;
+
+  .online-controllers-container {
+    overflow-y: auto;
+
+    > div:first-child {
+      border-top: 10px solid #DCE1EB;
+      border-bottom: 10px solid #DCE1EB;
+      padding: 12px 0;
+    }
+
+    .contact-list-container {
+      li::marker {
+        font-size: 25px;
+      }
+
+      li.active::marker{
+        color: green;
+      }
+
+      li.inactive::marker{
+        color: red;
+      }
+    }
+  }
+}
+
+:host::ng-deep {
+  .p-dropdown {
+    width: 100%;
+  }
+
+  .p-button {
+    background: #179BAB 0 0 no-repeat padding-box;
+    border: 1px solid #179BAB;
+    border-radius: 8px;
+  }
+
+  .p-button:hover {
+    background: #2AB6C7 0 0 no-repeat padding-box;
+    border-color: #2AB6C7 !important;
+  }
+}

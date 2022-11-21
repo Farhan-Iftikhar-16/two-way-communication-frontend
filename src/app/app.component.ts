@@ -23,7 +23,7 @@ export class AppComponent implements OnInit {
     this.messageService.connectionCreated().subscribe(data => console.log(data));
 
 
-    this.messageService.receiveMessage().subscribe(data => this.messages.push(data));
+    this.messageService.receiveMessage().subscribe(data => console.log(data));
   }
 
   createConnection(): void {

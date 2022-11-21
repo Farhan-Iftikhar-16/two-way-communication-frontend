@@ -1,17 +1,18 @@
 import {Injectable} from '@angular/core';
-import * as SOCKET_IO from 'socket.io-client';
+import * as io from 'socket.io-client';
 import {Observable} from "rxjs";
 
 @Injectable({
   providedIn: 'root'
 })
+
 export class MessageService {
   constructor() { }
-  private socket = SOCKET_IO.io('http://localhost:2000');
+  private socket = io('http://localhost:3000');
 
 
   createConnection(): void {
-    this.socket.emit('CREATE_CONNECTION', {name:'adsdsd'});
+    this.socket.emit('CREATE_CONNECTION');
   }
 
   connectionCreated(): Observable<any> {
